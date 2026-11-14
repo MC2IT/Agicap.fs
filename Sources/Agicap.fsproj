@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Company>MC2IT</Company>
+		<Copyright>© MC2IT</Copyright>
+		<Description>An Agicap API client library for F#.</Description>
+		<Product>Agicap for F#</Product>
+		<Version>2026.11.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>MC2IT</Authors>
+		<IncludeSymbols>true</IncludeSymbols>
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+		<PackageTags>accounting;agicap;api;client;sdk;treasury</PackageTags>
+		<RepositoryUrl>https://github.com/MC2IT/Agicap.fs.git</RepositoryUrl>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AssemblyName>Mc2it.Agicap.FSharp</AssemblyName>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<HotReloadAutoRestart>true</HotReloadAutoRestart>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutDir>../Binaries</OutDir>
+		<RootNamespace>Mc2it.Agicap</RootNamespace>
+		<TargetFramework>net11.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="$(RootNamespace).Tests" />
+		<None Include="../Icon.png" Pack="true" PackagePath="" />
+		<None Include="../ReadMe.md" Pack="true" PackagePath="" />
+		<PackageReference Update="FSharp.Core" Version="11.0.101" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- <Compile Include="TODO.fs" /> -->
+	</ItemGroup>
+</Project>

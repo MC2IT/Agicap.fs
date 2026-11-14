@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Company>MC2IT</Company>
+		<Copyright>© MC2IT</Copyright>
+		<Description>An Agicap API client library for F#.</Description>
+		<Product>Agicap for F#</Product>
+		<Version>2026.11.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AssemblyName>Mc2it.Agicap.Tests</AssemblyName>
+		<BaseOutputPath>obj</BaseOutputPath>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutDir>../Binaries</OutDir>
+		<RootNamespace>Mc2it.Agicap</RootNamespace>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<TargetFramework>net11.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Belin.Should" Version="2026.12.0" />
+		<PackageReference Include="MSTest" Version="4.5.3" />
+		<ProjectReference Include="../Sources/Agicap.fsproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.fs" />
+		<Compile Include="**/*.Tests.fs" />
+	</ItemGroup>
+</Project>
